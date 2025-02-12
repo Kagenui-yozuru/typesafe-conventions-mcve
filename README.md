@@ -1,6 +1,6 @@
 # Typesafe Conventions Plugin MCVE
 
-This is a Minimal, Complete, and Verifiable Example (MCVE) for an issue related to the `typesafe-conventions` Gradle plugin.
+This is a Minimal, Complete, and Verifiable Example (MCVE) for [an issue](https://github.com/radoslaw-panuszewski/typesafe-conventions-gradle-plugin/issues/15) related to the `typesafe-conventions` Gradle plugin.
 
 ## Main Issue Description
 
