@@ -1,0 +1,83 @@
+[versions]
+java = "17"
+kotlin = "1.9.25"
+spring-boot = "3.4.0"
+project = "1.0"
+
+# testing tools and gradle plugins
+spotless = "7.0.1"
+
+fastjson2 = "2.0.46"
+jjwt = "0.12.5"
+spring-openapi = "2.7.0"
+mybatis-plus = "3.5.9"
+mybatis-pagehelper = "2.1.0"
+spring-druid = "1.2.21"
+jetcache-springdata = "2.7.7"
+spring-dotenv = "4.0.0"
+kryo5 = "5.3.0"
+jts-core = "1.18.2"
+geotools = "27.0"
+postgis-jdbc = "2024.1.0"
+poi = "5.2.3"
+guava = "31.0.1-jre"
+spring-minio = "1.1.0"
+spring-ruoyi-auth = "1.0.1"
+slf4j = "1.7.32"
+logback = "1.2.6"
+apache-httpclient = "5.2.1"
+commons-codec = "1.18.0"
+
+[libraries]
+fastjson2 = { group = "com.alibaba.fastjson2", name = "fastjson2", version.ref = "fastjson2" }
+jjwt = { group = "io.jsonwebtoken", name = "jjwt", version.ref = "jjwt" }
+kryo5 = { module = "com.esotericsoftware.kryo:kryo5", version.ref = "kryo5" }
+guava = { group = "com.google.guava", name = "guava", version.ref = "guava" }
+slf4j = { group = "org.slf4j", name = "slf4j-api", version.ref = "slf4j" }
+logback = { group = "ch.qos.logback", name = "logback-classic", version.ref = "logback" }
+config-processor = { module = "org.springframework.boot:spring-boot-configuration-processor", version.ref = "spring-boot" }
+commons-codec = { module = "commons-codec:commons-codec", version.ref = "commons-codec" }
+
+# starters
+spring-validation = { module = "org.springframework.boot:spring-boot-starter-validation" }
+spring-web = { module = "org.springframework.boot:spring-boot-starter-web" }
+spring-aop = { module = "org.springframework.boot:spring-boot-starter-aop" }
+spring-security = { module = "org.springframework.boot:spring-boot-starter-security" }
+spring-openapi = { module = "org.springdoc:springdoc-openapi-starter-webmvc-ui", version.ref = "spring-openapi" }
+spring-druid = { module = "com.alibaba:druid-spring-boot-3-starter", version.ref = "spring-druid" }
+spring-dotenv = { module = "me.paulschwarz:spring-dotenv", version.ref = "spring-dotenv" }
+spring-minio = { module = "com.heny:spring-boot-minio-starter", version.ref = "spring-minio" }
+spring-ruoyi-auth = { module = "com.heny:spring-boot-ruoyi-auth-starter", version.ref = "spring-ruoyi-auth" }
+spring-retry = { module = "org.springframework.retry:spring-retry" }
+# mybatis
+mybatis-plus = { group = "com.baomidou", name = "mybatis-plus-spring-boot3-starter", version.ref = "mybatis-plus" }
+mybatis-plus-jsqlparser = { group = "com.baomidou", name = "mybatis-plus-jsqlparser", version.ref = "mybatis-plus" }
+mybatis-pagehelper = { group = "com.github.pagehelper", name = "pagehelper-spring-boot-starter", version.ref = "mybatis-pagehelper" }
+# cache
+jetcache-springdata = { module = "com.alicp.jetcache:jetcache-starter-redis-springdata", version.ref = "jetcache-springdata" }
+# gis
+jts-core = { group = "org.locationtech.jts", name = "jts-core", version.ref = "jts-core" }
+geotools-main = { group = "org.geotools", name = "gt-main", version.ref = "geotools" }
+geotools-geojson = { group = "org.geotools", name = "gt-geojson", version.ref = "geotools" }
+geotools-epsg-hsql = { group = "org.geotools", name = "gt-epsg-hsql", version.ref = "geotools" }
+postgis-jdbc = { group = "net.postgis", name = "postgis-jdbc", version.ref = "postgis-jdbc" }
+# poi
+poi = { group = "org.apache.poi", name = "poi", version.ref = "poi" }
+poi-ooxml = { group = "org.apache.poi", name = "poi-ooxml", version.ref = "poi" }
+# gradle plugins
+kotlin-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+kotlin-allopen-plugin = { module = "org.jetbrains.kotlin:kotlin-allopen", version.ref = "kotlin" }
+kotlin-noarg-plugin = { module = "org.jetbrains.kotlin:kotlin-noarg", version.ref = "kotlin" }
+spring-dependencyManagement-plugin = { group = "io.spring.gradle", name = "dependency-management-plugin", version = "1.1.7" }
+diffplug-spotless-plugin = { group = "com.diffplug.spotless", name = "com.diffplug.spotless.gradle.plugin", version.ref = "spotless" }
+
+kotlin-spring-plugin = { group = "org.jetbrains.kotlin.plugin.spring", name = "org.jetbrains.kotlin.plugin.spring.gradle.plugin", version.ref = "kotlin" }
+kotlin-jvm-plugin = { group = "org.jetbrains.kotlin.jvm", name = "org.jetbrains.kotlin.jvm.gradle.plugin", version.ref = "kotlin" }
+kotlin-kapt-plugin = { group = "org.jetbrains.kotlin.kapt", name = "org.jetbrains.kotlin.kapt.gradle.plugin", version.ref = "kotlin" }
+spring-boot-plugin = { module = "org.springframework.boot:spring-boot-gradle-plugin", version.ref = "spring-boot" }
+# spring-boot
+spring-boot-bom = { group = "org.springframework.boot", name = "spring-boot-dependencies", version.ref = "spring-boot" }
+# client
+apache-httpclient = { module = "org.apache.httpcomponents.client5:httpclient5", version.ref = "apache-httpclient" }
+[plugins]
+spring-dependency-management = { id = "io.spring.dependency-management", version = "1.1.7" }
